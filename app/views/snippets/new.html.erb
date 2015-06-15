@@ -1,0 +1,16 @@
+<h1>Code Snippets</h1>
+
+
+<%= form_for @snippet do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <br>
+  <div>
+    <%= f.label :work %>
+    <%= f.text_area :work %>
+  </div>
+
+  <%= f.submit "Save" %>
+<% end %>
