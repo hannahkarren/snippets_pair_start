@@ -7,7 +7,7 @@ class SnippetsController < ApplicationController
 
     if @snippet.save
 
-      redirect_to snippet_path(@snippet), notice: "Snippet Created"
+      redirect_to new_snippet_path(@snippet), notice: "Snippet Created"
     else
 
       render :new
